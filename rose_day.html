@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Rose Day ??</title>
+    <style>
+        body {
+            background-color: #ffdde1;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            padding: 20px;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        h1 {
+            color: #d63384;
+            font-size: 2.5em;
+        }
+        .rose {
+            width: 100px;
+            animation: float 2s infinite alternate;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            100% { transform: translateY(-10px); }
+        }
+        .btn {
+            background-color: #d63384;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .hidden-message {
+            display: none;
+            font-size: 1.5em;
+            color: #d63384;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Rose Day My Love! ??</h1>
+        <img src="https://i.imgur.com/Oj1N6yH.png" alt="Rose" class="rose">
+        <p>You are as beautiful and special as this rose! ??</p>
+        <button class="btn" onclick="showMessage()">Click for a Surprise! ??</button>
+        <p class="hidden-message" id="message">I love you so much! ??</p>
+    </div>
+    <audio id="bg-music" loop>
+        <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+        function showMessage() {
+            document.getElementById('message').style.display = 'block';
+            document.getElementById('bg-music').play();
+        }
+    </script>
+</body>
+</html>
